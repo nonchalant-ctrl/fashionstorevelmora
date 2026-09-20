@@ -1,0 +1,639 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+nav ul li:hover{
+    text-transform: uppercase;
+}
+
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+nav h4{
+    font-size: 30px;
+    color: skyblue;
+}
+
+.links{
+    background-color: skyblue;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+
+.links:hover{
+    background-color: navy;
+}
+
+header{
+    align-items: center;
+    text-align: center;
+    padding: 200px;
+    background-image: linear-gradient(skyblue, black);
+    height: 750px;
+}
+
+header h2{
+    font-size: 80px;
+    margin-top: 40px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+header p{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+.us{
+    display: none;
+}
+
+header a{
+    background-color: skyblue;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header a:hover{
+    box-shadow: 0 5px 10px black;
+}
+
+.head{
+    margin-top: 80px;
+    text-align: center;
+    align-items: center;
+    background-color: skyblue;
+    padding-top: 60px;
+    margin-top: 30px;
+    padding-bottom: 40px;
+}
+
+.head h2{
+    color: white;
+    font-size: 40px;
+}
+
+.head p{
+    color: white;
+    margin-top: 10px;
+}
+
+.div{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.div .pen a{
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid skyblue;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+.div .pen a:hover{
+    background-color: skyblue;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 10px;
+}
+
+section img{
+    width: 250px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.cart{
+    background-color: whitesmoke;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.cart:hover{
+    box-shadow: 0 1px 10px;
+}
+
+.cart .fa-cart-shopping{
+    color: black;
+}
+
+.cart h4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.cart p{
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.cart a{
+    background-color: skyblue;
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    border-radius: 0;
+}
+
+.cart a:hover{
+    background-color: rgb(2, 48, 122);
+}
+
+.about{
+    margin-top: 40px;
+    padding-left: 50px;
+    background-color: skyblue;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+.about h3{
+    font-size: 50px;
+    color: white;
+    text-shadow: 0px 2px 10px black;
+}
+
+.about p{
+    color: white;
+}
+
+article{
+    display: flex;
+
+}
+
+article div img{
+    width: 700px;
+    height: 400px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+article h5{
+    margin-top: 90px;
+    margin-bottom: 10px;
+    color: navy;
+}
+
+article h3{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+article p{
+    width: 400px;
+}
+
+.cta{
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    padding-top: 40px;
+    margin-top: 50pxs;
+    padding-bottom: 50px;
+}
+
+.cta h3{
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.cta p{
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.glow{
+    text-decoration: none;
+    background-color: skyblue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.glow:hover{
+    background-color: navy;
+}
+
+.kic{
+    text-decoration: none;
+    color: gray;
+}
+
+form{
+    margin-bottom: 20px;
+}
+
+.laf{
+    display: flex;
+    background: linear-gradient(black, skyblue);
+}
+
+.laf div{
+    padding: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.laf div h2{
+    width: 200%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.laf label{
+    width: 100%;
+    font-size: 50%;
+    color: white;
+}
+
+.laf input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+
+}
+.laf div img{
+    width: 80%;
+    height: 85%;
+    border-radius: 20px;
+    box-shadow: 0 2px 20px white;
+}
+
+.lockin{
+    background-color: skyblue;
+    text-decoration: none;
+    color: white;
+    padding: 5px 100px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 100%;
+}
+
+.lockin:hover{
+    background-color: rgb(3, 67, 215);
+}
+
+.laf p{
+    font-size: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: white;
+}
+
+.duh{
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 5px 95px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.duh:hover{
+    background-color: rgb(85, 83, 83);
+}
+
+.kek{
+    text-decoration: none;
+    color: white;
+    font-size: 50%;
+    border: 2px solid skyblue;
+    padding: 5px 107px;
+    border-radius: 5px;
+}
+
+.king{
+    background-color: skyblue;
+    text-decoration: none;
+    color: white;
+    padding: 5px 93px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-top: 100%;
+}
+
+.king:hover{
+    background-color: rgb(3, 67, 215);
+}
+
+.kek:hover{
+    background-color: skyblue;
+}
+
+figure{
+    display: flex;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left: 200px;
+    gap: 20%;
+    background-color: rgb(44, 43, 43);
+}
+
+figure h3{
+    font-size: 50px;
+    margin-left: -100px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    color: white;
+}
+figure label{
+    font-size: 100%;
+    margin-left: -100px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+figure input{
+    width: 300px;
+    height: 30px;
+    margin-left: -100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0.5px black solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+figure textarea{
+    width: 150%;
+    height: 100px;
+    margin-left: -100px;
+    margin-top: 15px;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+figure a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 25px;
+    margin-left: -100px;
+}
+figure a:hover{
+    background-color: rgb(89, 88, 88);
+}
+
+figure div img{
+    width: 300%;
+    height: 100%;
+    margin: -50px;
+}
+@media only screen and (max-width:780px){
+    nav ul li{
+        display: none;
+    }
+
+    header{
+        padding: 350px;
+         text-align: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    header h2{
+        margin-left: -400px;
+        width: 500px;
+        margin-top: -120px;
+    }
+
+    header p{
+        margin-left: -350px;
+        width: 400px;
+    }
+
+    header a{
+        margin-left: -300px;
+        margin-bottom: -500px;
+    }
+
+
+
+    .div{
+        flex-direction: column;
+    }
+
+    .div div h3{
+        margin-bottom: 20px;
+    }
+
+    .div p{
+        width: 50px;
+    }
+
+    .div .pen a{
+        font-size: 10px;
+    }
+
+    section{
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+    }
+
+    .cart img{
+        width: 180px;
+    }
+
+    .cart{
+        width: 200px;
+        padding: 5px;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .gud{
+        text-decoration: none;
+        text-align: center;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: black;
+        border: 2px solid skyblue;
+        padding: 5px 15px;
+        padding-right: -50px;
+        border-radius: 5px;
+    }
+
+    .gud:hover{
+        background-color: skyblue;
+    }
+
+
+
+    .port{
+        flex-direction: column;
+    }
+
+    .port h5{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .port img{
+        width: 120%;
+        margin-left: -35px;
+        margin-top: -50px;
+        margin-bottom: -100px;
+    }
+
+    .port h3{
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .port p{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    .cta h3{
+        width: 100%;
+        margin-left: -50px;
+        margin-right: 50px;
+    }
+
+    .cta{
+        flex-direction: column;
+    }
+    .cta p{
+        width: 200%;
+        margin-left: -40px;
+        margin-right: 50px;
+    }
+
+    .cta a{
+        margin-left: -80px;
+        margin-right: 10px
+    }
+
+    .laf{
+        margin: 0;
+        padding-bottom: 200px;
+
+    }
+
+    .gud{
+        display: flex;
+    }
+
+    .laf div h2{
+        margin-left: -100px;
+        margin-right: 100px;
+        font-size: 30px;
+        width: 300px;
+    }
+
+    .laf div label{
+        margin-left: -100px;
+    }
+
+    .laf input{
+        margin-left: -100px;
+    }
+
+    .lockin{
+        margin-left: -100px;
+        padding: 5px 125px;
+    }
+
+    .laf p{
+        margin-left: -100px;
+    }
+    
+    .duh{
+       margin-left: -100px;
+        padding: 5px 125px; 
+    }
+
+    .kek{
+        margin-left: -100px;
+        padding: 10px 138px;
+    }
+
+    .laf div img{
+        display: none;
+    }
+
+    .king{
+        margin-left: -100px;
+        padding: 5px 125px;
+    }
+
+    figure h3{
+        margin-left: -150px;
+    }
+
+    figure label{
+        margin-left: -150px;
+    }
+
+    figure input{
+        margin-left: -150px;
+    }
+
+    figure textarea{
+        margin-left: -150px;
+        width: 200%;
+    }
+
+    figure img{
+        display: none;
+    }
+    
+    figure{
+        padding-bottom: 200px;
+    }
+}
